@@ -18,7 +18,7 @@ if (file_exists($filename)) {
   fwrite($myfile, $_msg);
   fclose($myfile);
 }
-if($arrJson['events'][0]['message']['text'] == "à¸ªà¸§à¸±à¸ªà¸”à¸µ"){
+if($arrJson['events'][0]['message']['text'] == "สวัสดีจ้า"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -27,12 +27,12 @@ if($arrJson['events'][0]['message']['text'] == "à¸ªà¸§à¸±à¸ªà¸”�
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Bot : à¸«à¸¢à¸¸à¸”";
+  $arrPostData['messages'][0]['text'] = "Bot : ไม่งง";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Bot :à¹„à¸¡à¹ˆà¹€à¸‚à¹‰à¸²à¹ƒà¸ˆà¸„à¸³à¸ªà¸±à¹ˆà¸‡";
+  $arrPostData['messages'][0]['text'] = "Bot :งง";
 }
  
  
